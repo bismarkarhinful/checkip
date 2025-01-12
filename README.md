@@ -1,1 +1,34 @@
-# checkip
+# IP Address Checker 🌐
+
+A simple, elegant web application that allows users to check their public IP address with just one click. Built with a sleek dark theme interface for better visibility and user experience.
+
+## Features
+
+- Clean dark theme UI
+- Single-click IP address retrieval
+- Responsive design
+- Error handling
+- Uses the ipify API for reliable IP detection
+
+## How to Use
+
+1. Open the HTML file in your web browser
+2. Click the "Get My IP Address" button
+3. Your public IP address will be displayed in orange text
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- ipify API
+
+## Preview
+
+The application features a dark interface with cyan accents and orange text for the IP display. The container is centered on the page with a subtle shadow effect for depth.
+
+## Note
+
+This application requires an internet connection to fetch your public IP address through the ipify API.
+
+Made with 💙 by Bismark

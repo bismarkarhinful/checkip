@@ -1,4 +1,4 @@
-# IP Address Checker 🌐
+# IP Address Checker 
 
 A simple, elegant web application that allows users to check their public IP address with just one click. Built with a sleek dark theme interface for better visibility and user experience.
 

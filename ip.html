@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Address Checker</title>
+  <style>
+    /* Dark Theme Styles */
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: #00d1ff;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00d1ff;
+      color: #121212;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #00a3d1;
+    }
+
+    .ip-display {
+      margin-top: 15px;
+      font-size: 1.5rem;
+      color: #ffa500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>IP Address Checker</h1>
+    <button onclick="getIPAddress()">Get My IP Address</button>
+    <div class="ip-display" id="ipDisplay"></div>
+  </div>
+
+  <script>
+    function getIPAddress() {
+      const ipDisplay = document.getElementById('ipDisplay');
+
+      // Use an API to fetch the public IP
+      fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+          ipDisplay.textContent = `Your IP Address: ${data.ip}`;
+        })
+        .catch(error => {
+          ipDisplay.textContent = 'Unable to fetch IP address. Please try again!';
+          console.error('Error fetching IP:', error);
+        });
+    }
+  </script>
+</body>
+</html>

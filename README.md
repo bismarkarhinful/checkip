@@ -23,9 +23,6 @@ A simple, elegant web application that allows users to check their public IP add
 - JavaScript
 - ipify API
 
-## Preview
-
-The application features a dark interface with cyan accents and orange text for the IP display. The container is centered on the page with a subtle shadow effect for depth.
 
 ## Note
 
